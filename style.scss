@@ -1,0 +1,320 @@
+/* tipo de letra */
+$fuente-letra: "Montserrat", sans-serif;
+
+$color-principal: #2f80ed;
+$color-secundario: #4f4f4f;
+$color-negro: #000;
+$color-blanco: #fff;
+$color-gray: #828282;
+$color-gris-claro: #e0e0e0;
+
+main{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1440px;
+    margin: 40px auto;
+    gap: 30px;
+}
+
+body{
+    background-color:$color-gris-claro ;
+    font-family: $fuente-letra;
+}
+
+img{
+    width: 100%;
+}
+
+.containerLeft{
+    min-width: 370px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.containerRight{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    
+}
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.base{
+    background-color: $color-blanco;
+    border-radius: 10px;
+    box-shadow: 0px 8px 9px -3px rgba(130, 130, 130, 0.84);
+    padding: 20px;
+}
+
+.perfil{
+    h1{
+        color: $color-secundario;
+        font-size: 25px;
+    }
+    .plomo{
+        color: $color-gray;
+        font-size: 16px;
+    }
+    p{
+        font-size: 18px;
+        color: #000;
+    }
+    .plomo2{
+        font-size: 18px;
+        color: $color-gray;
+        margin-bottom: 0;
+    }
+    .email{
+        align-items: center;
+        display: flex;
+        margin-bottom: 5px;
+        p{
+            margin: 0;
+            margin-left: 10px;
+       }   
+    }
+    .telefono{
+        display: flex;
+        align-items: center;
+        p{
+            margin: 0;
+            margin-left: 10px;
+        }
+    }
+}
+
+.experiences{
+    h2{
+        font-weight: 400;
+    }
+    .todes{
+        display: flex;
+        
+        .logos{
+            width: 230px;
+        }
+        .text{
+            margin-left: 10px;
+            color: $color-gray;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .fecha{
+            font-size: 14px;
+            color: $color-gray;
+        }
+        .title{
+            font-size: 15px;
+            font-weight: 600;
+            color: $color-negro;
+        }
+    }
+}
+
+.hobbies{
+    h2{
+        font-weight: 400;
+    }
+    .text1{
+        margin-top: 1;
+        margin-bottom: 40px;
+    }
+    .text2{
+        margin-bottom: 0px;
+    }
+}
+
+/* Seccion Progresos */
+.contenedor_main_progresos {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 20px;
+    justify-items: stretch;
+}
+  
+.contenedor_progreso_skills:first-child {
+    grid-row: 1 / span 2;
+}
+  
+.skills_titulo {
+    font-size: 18px;
+    color: var(--color-secundario);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+  
+.skills_listado {
+    display: flex;
+    flex-direction: column;
+}
+  
+.skills_listado_item {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    align-items: center;
+}
+  
+.skills_listado_item_titulo {
+    font-size: 16px;
+}
+  
+.skills_listado_item_avance {
+    width: 100%;
+    height: 25px;
+}
+
+
+/* Titulos seccion Projects*/
+.containerSolo{
+    h2{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+/* Seccion listado de Projects*/
+.proyecto{
+    img{
+        
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .text{
+        color: $color-gray;
+        font-weight: 500;
+    }
+    .botonAzul{
+        background-color: $color-principal;
+        color: $color-blanco;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 8px 30px;
+        margin-right: 5px;
+        border: 0px solid;
+    }
+    .botonBlanco{
+        background-color: $color-blanco;
+        color: $color-principal;
+        border-color: $color-principal;
+        border: 1px solid;
+        font-weight: 500;
+        padding: 8px 30px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+}
+
+.Blog{
+    .gris{
+        font-size: 16px;
+        color: $color-gris-claro;
+        font-weight: 500;
+    }
+    h3{
+        font-weight: 500;
+        line-height: normal;
+        color: $color-secundario;
+        font-size: 24px;
+    }
+    p{
+        color: $color-gray;
+        font-weight: 500;
+    }
+    .blue{
+        color: $color-principal;
+    }
+}
+
+
+.contenedor_progreso_skills:first-child{
+    grid-row: 1 / span 2;
+}
+
+footer{
+    color: $color-gray;
+    font-size: 14px;
+    b{
+        color: $color-negro;
+    }
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Responsive Tablet */
+@media (min-width: 780px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Responsive PC */
+@media (min-width: 1000px) {
+    main{
+        grid-template-columns: 1fr 2fr;
+    }
+    .containerRight{
+        max-width: 1000px;
+    }
+
+    .contenedor_main_progresos {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .contenedor {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .containerSolo{
+        padding: 20px;
+    }
+    .proyecto{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        gap: 30px;
+        .texto{
+            padding-right: 100px;
+            p{
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .Blog{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        .gris{
+            margin-top: 0px;
+        }
+        h3{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .blue{
+            margin:0%;
+        }
+
+        .second{
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+
+
+
+

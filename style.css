@@ -1,0 +1,280 @@
+/* tipo de letra */
+main {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1440px;
+  margin: 40px auto;
+  gap: 30px;
+}
+
+body {
+  background-color: #e0e0e0;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.containerLeft {
+  min-width: 370px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.containerRight {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.base {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 9px -3px rgba(130, 130, 130, 0.84);
+  padding: 20px;
+}
+
+.perfil h1 {
+  color: #4f4f4f;
+  font-size: 25px;
+}
+.perfil .plomo {
+  color: #828282;
+  font-size: 16px;
+}
+.perfil p {
+  font-size: 18px;
+  color: #000;
+}
+.perfil .plomo2 {
+  font-size: 18px;
+  color: #828282;
+  margin-bottom: 0;
+}
+.perfil .email {
+  align-items: center;
+  display: flex;
+  margin-bottom: 5px;
+}
+.perfil .email p {
+  margin: 0;
+  margin-left: 10px;
+}
+.perfil .telefono {
+  display: flex;
+  align-items: center;
+}
+.perfil .telefono p {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.experiences h2 {
+  font-weight: 400;
+}
+.experiences .todes {
+  display: flex;
+}
+.experiences .todes .logos {
+  width: 230px;
+}
+.experiences .todes .text {
+  margin-left: 10px;
+  color: #828282;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.experiences .todes .fecha {
+  font-size: 14px;
+  color: #828282;
+}
+.experiences .todes .title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.hobbies h2 {
+  font-weight: 400;
+}
+.hobbies .text1 {
+  margin-top: 1;
+  margin-bottom: 40px;
+}
+.hobbies .text2 {
+  margin-bottom: 0px;
+}
+
+/* Seccion Progresos */
+.contenedor_main_progresos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: stretch;
+}
+
+.contenedor_progreso_skills:first-child {
+  grid-row: 1/span 2;
+}
+
+.skills_titulo {
+  font-size: 18px;
+  color: var(--color-secundario);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.skills_listado {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills_listado_item {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  align-items: center;
+}
+
+.skills_listado_item_titulo {
+  font-size: 16px;
+}
+
+.skills_listado_item_avance {
+  width: 100%;
+  height: 25px;
+}
+
+/* Titulos seccion Projects*/
+.containerSolo h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Seccion listado de Projects*/
+.proyecto h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.proyecto .text {
+  color: #828282;
+  font-weight: 500;
+}
+.proyecto .botonAzul {
+  background-color: #2f80ed;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 8px 30px;
+  margin-right: 5px;
+  border: 0px solid;
+}
+.proyecto .botonBlanco {
+  background-color: #fff;
+  color: #2f80ed;
+  border-color: #2f80ed;
+  border: 1px solid;
+  font-weight: 500;
+  padding: 8px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.Blog .gris {
+  font-size: 16px;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+.Blog h3 {
+  font-weight: 500;
+  line-height: normal;
+  color: #4f4f4f;
+  font-size: 24px;
+}
+.Blog p {
+  color: #828282;
+  font-weight: 500;
+}
+.Blog .blue {
+  color: #2f80ed;
+}
+
+.contenedor_progreso_skills:first-child {
+  grid-row: 1/span 2;
+}
+
+footer {
+  color: #828282;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+footer b {
+  color: #000;
+}
+
+/* Responsive Tablet */
+@media (min-width: 780px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Responsive PC */
+@media (min-width: 1000px) {
+  main {
+    grid-template-columns: 1fr 2fr;
+  }
+  .containerRight {
+    max-width: 1000px;
+  }
+  .contenedor_main_progresos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contenedor {
+    grid-template-columns: 1fr 1fr;
+  }
+  .containerSolo {
+    padding: 20px;
+  }
+  .proyecto {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 30px;
+  }
+  .proyecto .texto {
+    padding-right: 100px;
+  }
+  .proyecto .texto p {
+    padding-bottom: 10px;
+  }
+  .Blog {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+  .Blog .gris {
+    margin-top: 0px;
+  }
+  .Blog h3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .Blog .blue {
+    margin: 0%;
+  }
+  .Blog .second {
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
